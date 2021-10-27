@@ -34,6 +34,11 @@ import {
 export default {
     setup(){
       
+    } ,
+
+    name: 'MostLoved' ,
+    components : {
+      SfProductCard , 
     }
 }
 </script>
