@@ -27,7 +27,9 @@
         </template>
       </SfBannerGrid>
     </LazyHydrate>
-   
+      <!-- V-The Banner 3 On The Page -->
+       <Banner/>
+        <!--V_ The Banner 3 On The Page -->
     <LazyHydrate when-visible>
       <RelatedProducts
         :products="products"
@@ -88,6 +90,7 @@ import MobileStoreBanner from "~/components/MobileStoreBanner.vue";
 import LazyHydrate from "vue-lazy-hydration";
 import CardContainer from "~/components/CardContainer.vue";
 import { useCategory } from "@vue-storefront/shopify";
+import Banner from '~/components/Banner.vue'
 export default {
   name: "Home",
   // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
@@ -136,8 +139,9 @@ export default {
     MobileStoreBanner,
     LazyHydrate,
     CardContainer,
-    MostLoved , 
-    Productgrid ,
+    MostLoved,
+    Banner,
+
   },
   // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   data() {
