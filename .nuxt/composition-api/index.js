@@ -442,7 +442,11 @@ const globalPlugin = (context) => {
   };
 };
 
+<<<<<<< HEAD
 const staticPath = "D:/AUKI/Shopify/snitch-shopify/.nuxt/static-json";
+=======
+const staticPath = "D:/GitHub/snitch-shopify/.nuxt/static-json";
+>>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
 const staticCache = {};
 function writeFile(key, value) {
   if (process.client || !process.static)

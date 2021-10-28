@@ -46,7 +46,11 @@
         title="Match it with"
       />
     </LazyHydrate>
+
+    <Productgrid></Productgrid>
+
     <MostLoved></MostLoved>
+
     <CardContainer :categoriesList="categoriesList"></CardContainer>
     <LazyHydrate when-visible>
       <SfCallToAction
@@ -78,6 +82,7 @@ import {
 import RelatedProducts from "~/components/RelatedProducts.vue";
 import RelatedProducts1 from "~/components/RelatedProducts1.vue";
 import MostLoved from '~/components/MostLoved.vue';
+import Productgrid from '~/components/Productgrid.vue';
 import { useProduct, useCart, productGetters } from "@vue-storefront/shopify";
 import { computed } from "@vue/composition-api";
 import { onSSR } from "@vue-storefront/core";
