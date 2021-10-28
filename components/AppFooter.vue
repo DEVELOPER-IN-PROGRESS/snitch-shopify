@@ -1,21 +1,21 @@
 <template>
-  <SfFooter :column="4" multiple class="footer">
-    <SfFooterColumn :title="$t('About us')">
-      <SfList>
-        <SfListItem
-          v-for="item in aboutUs"
+  <SfFooter :column="5" multiple class="footer">
+    <SfFooterColumn :title="$t('About Snitch')">
+      <SfList >
+        <SfListItem 
+          v-for="item in aboutsnitch"
           :key="item"
           >
-          <SfMenuItem
+          <SfMenuItem 
             :label="$t(item)"
           />
         </SfListItem>
       </SfList>
     </SfFooterColumn>
-    <SfFooterColumn :title="$t('Departments')">
+    <SfFooterColumn :title="$t('Returns')">
       <SfList>
         <SfListItem
-          v-for="item in departments"
+          v-for="item in returns"
           :key="item"
         >
           <SfMenuItem
@@ -24,10 +24,10 @@
         </SfListItem>
       </SfList>
     </SfFooterColumn>
-    <SfFooterColumn :title="$t('Help')">
+    <SfFooterColumn :title="$t('Categories')">
       <SfList>
         <SfListItem
-          v-for="item in help"
+          v-for="item in categories"
           :key="item"
         >
           <SfMenuItem
@@ -36,10 +36,10 @@
         </SfListItem>
       </SfList>
     </SfFooterColumn>
-    <SfFooterColumn :title="$t('Payment & Delivery')">
+    <SfFooterColumn :title="$t('Get to know us better')">
       <SfList>
         <SfListItem
-          v-for="item in paymentsDelivery"
+          v-for="item in gettoknow"
           :key="item"
         >
           <SfMenuItem
@@ -48,16 +48,29 @@
         </SfListItem>
       </SfList>
     </SfFooterColumn>
-    <SfFooterColumn title="Social">
+    <SfFooterColumn :title="$t('CUSTOMER CARE:  10 AM - 6:30 PM (Mon - Sat)')">
+      <SfList>
+        <SfListItem
+          v-for="item in cc"
+          :key="item"
+        >
+          <SfMenuItem
+            :label="$t(item)"
+          />
+        </SfListItem>
+      </SfList>
+    </SfFooterColumn>
+    <!-- <SfFooterColumn title="Social">
       <div class="footer__socials">
         <SfImage class="footer__social-image" v-for="item in social" :key="item" :src="'/icons/'+item+'.svg'" :alt="item" width="32" height="32" />
       </div>
-    </SfFooterColumn>
+    </SfFooterColumn> -->
   </SfFooter>
 </template>
 
 <script>
 import { SfFooter, SfList, SfImage, SfMenuItem } from '@storefront-ui/vue';
+
 
 export default {
   components: {
@@ -68,13 +81,14 @@ export default {
   },
   data() {
     return {
-      aboutUs: ['Who we are', 'Quality in the details', 'Customer Reviews'],
-      departments: ['Women fashion', 'Men fashion', 'Kidswear', 'Home'],
-      help: ['Customer service', 'Size guide', 'Contact us'],
-      paymentsDelivery: ['Purchase terms', 'Guarantee'],
-      social: ['facebook', 'pinterest', 'google', 'twitter', 'youtube'],
+      aboutsnitch: ['Encapsulating inspirations from', 'around the globe, SNITCH crafts', 'clothing for the fashion-forward','modern man. Offering an','unconventional style ethos as a','mens fast fashion brand, we','design style in response'],
+      returns: ['Click To Place Return  ', 'Returns & Exchange Policy'],
+     categories: ['Shirts', 'T-Shirts', 'Jeans','Shorts','Co-ords','Boxers','Combo Deals'],
+      gettoknow: ['CSR', 'FAQ','Contact Us','Terms & Conditions','Privacy Policy','Payment Terms','Track Order','Blogs'],
+      cc: ['+91 080 4710 4444','support@snitch.co.in'],
+      // social: ['facebook', 'pinterest', 'google', 'twitter', 'youtube'],
       isMobile: false,
-      desktopMin: 1024
+    
     };
   }
 };
@@ -84,8 +98,10 @@ export default {
 
 .footer {
   margin-bottom: 3.75rem;
+  background-color:#fff;
   @include for-desktop {
     margin-bottom: 0;
+   
   }
   &__socials {
     display: flex;
@@ -116,4 +132,17 @@ export default {
     }
   }
 }
+
+.sf-footer-column{
+ background-color:#fff;
+}
+.sf-footer-column__title{
+  color: rgb(0, 0, 0);
+  background-color:#fff;
+}
+.sf-menu-item__label{
+  color:#a3a3a3;
+}
+
+
 </style>
