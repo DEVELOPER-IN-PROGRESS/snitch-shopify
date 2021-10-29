@@ -1,666 +1,401 @@
 [
-  {
-    "name": "Category___en",
-    "path": "/Category",
-<<<<<<< HEAD
-    "component": "D:\\\\AUKI\\\\Shopify\\\\snitch-shopify\\\\pages\\\\Category.vue",
-    "chunkName": "pages/Category"
-=======
-    "component": "D:\\\\GitHub\\\\snitch-shopify\\\\pages\\\\Category.vue",
-    "chunkName": "pages/Category",
-    "_name": "_24f14b67"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-  },
-  {
-    "name": "checkout___en",
-    "path": "/checkout",
-<<<<<<< HEAD
-    "component": "D:\\AUKI\\Shopify\\snitch-shopify\\pages\\Checkout.vue",
-=======
-    "component": "D:\\GitHub\\snitch-shopify\\pages\\Checkout.vue",
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-    "children": [
-      {
-        "path": "billing",
-        "name": "billing___en",
-<<<<<<< HEAD
-        "component": "D:\\AUKI\\Shopify\\snitch-shopify\\pages\\Checkout\\Billing.vue"
-=======
-        "component": "D:\\GitHub\\snitch-shopify\\pages\\Checkout\\Billing.vue",
-        "_name": "_151cc804"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-      },
-      {
-        "path": "payment",
-        "name": "payment___en",
-<<<<<<< HEAD
-        "component": "D:\\AUKI\\Shopify\\snitch-shopify\\pages\\Checkout\\Payment.vue"
-=======
-        "component": "D:\\GitHub\\snitch-shopify\\pages\\Checkout\\Payment.vue",
-        "_name": "_9867cbe2"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-      },
-      {
-        "path": "shipping",
-        "name": "shipping___en",
-<<<<<<< HEAD
-        "component": "D:\\AUKI\\Shopify\\snitch-shopify\\pages\\Checkout\\Shipping.vue"
-=======
-        "component": "D:\\GitHub\\snitch-shopify\\pages\\Checkout\\Shipping.vue",
-        "_name": "_63932216"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-      },
-      {
-        "path": "thank-you",
-        "name": "thank-you___en",
-<<<<<<< HEAD
-        "component": "D:\\AUKI\\Shopify\\snitch-shopify\\pages\\Checkout\\ThankYou.vue"
-=======
-        "component": "D:\\GitHub\\snitch-shopify\\pages\\Checkout\\ThankYou.vue",
-        "_name": "_90778ac8"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-      }
-    ],
-    "_name": "_311f0205"
-  },
-  {
-    "name": "Checkout___en",
-    "path": "/Checkout",
-<<<<<<< HEAD
-    "component": "D:\\\\AUKI\\\\Shopify\\\\snitch-shopify\\\\pages\\\\Checkout.vue",
-=======
-    "component": "D:\\\\GitHub\\\\snitch-shopify\\\\pages\\\\Checkout.vue",
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-    "chunkName": "pages/Checkout",
-    "children": [
-      {
-        "name": "Checkout-Billing___en",
-        "path": "Billing",
-<<<<<<< HEAD
-        "component": "D:\\\\AUKI\\\\Shopify\\\\snitch-shopify\\\\pages\\\\Checkout\\\\Billing.vue",
-        "chunkName": "pages/Checkout/Billing"
-=======
-        "component": "D:\\\\GitHub\\\\snitch-shopify\\\\pages\\\\Checkout\\\\Billing.vue",
-        "chunkName": "pages/Checkout/Billing",
-        "_name": "_5ceb90bc"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-      },
-      {
-        "name": "Checkout-Payment___en",
-        "path": "Payment",
-<<<<<<< HEAD
-        "component": "D:\\\\AUKI\\\\Shopify\\\\snitch-shopify\\\\pages\\\\Checkout\\\\Payment.vue",
-        "chunkName": "pages/Checkout/Payment"
-=======
-        "component": "D:\\\\GitHub\\\\snitch-shopify\\\\pages\\\\Checkout\\\\Payment.vue",
-        "chunkName": "pages/Checkout/Payment",
-        "_name": "_08ca3a72"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-      },
-      {
-        "name": "Checkout-Shipping___en",
-        "path": "Shipping",
-<<<<<<< HEAD
-        "component": "D:\\\\AUKI\\\\Shopify\\\\snitch-shopify\\\\pages\\\\Checkout\\\\Shipping.vue",
-        "chunkName": "pages/Checkout/Shipping"
-=======
-        "component": "D:\\\\GitHub\\\\snitch-shopify\\\\pages\\\\Checkout\\\\Shipping.vue",
-        "chunkName": "pages/Checkout/Shipping",
-        "_name": "_ff7e8586"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-      },
-      {
-        "name": "Checkout-ThankYou___en",
-        "path": "ThankYou",
-<<<<<<< HEAD
-        "component": "D:\\\\AUKI\\\\Shopify\\\\snitch-shopify\\\\pages\\\\Checkout\\\\ThankYou.vue",
-        "chunkName": "pages/Checkout/ThankYou"
-=======
-        "component": "D:\\\\GitHub\\\\snitch-shopify\\\\pages\\\\Checkout\\\\ThankYou.vue",
-        "chunkName": "pages/Checkout/ThankYou",
-        "_name": "_69ce88e4"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-      }
-    ],
-    "_name": "_62b877af"
-  },
-  {
-    "name": "ContactUs___en",
-    "path": "/ContactUs",
-<<<<<<< HEAD
-    "component": "D:\\\\AUKI\\\\Shopify\\\\snitch-shopify\\\\pages\\\\ContactUs.vue",
-    "chunkName": "pages/ContactUs"
-=======
-    "component": "D:\\\\GitHub\\\\snitch-shopify\\\\pages\\\\ContactUs.vue",
-    "chunkName": "pages/ContactUs",
-    "_name": "_e07cec76"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-  },
-  {
-    "name": "home___de",
-    "path": "/de",
-<<<<<<< HEAD
-    "component": "D:\\AUKI\\Shopify\\snitch-shopify\\pages\\Home.vue"
-=======
-    "component": "D:\\GitHub\\snitch-shopify\\pages\\Home.vue",
-    "_name": "_11a3e09e"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-  },
-  {
-    "name": "Home___en",
-    "path": "/Home",
-<<<<<<< HEAD
-    "component": "D:\\\\AUKI\\\\Shopify\\\\snitch-shopify\\\\pages\\\\Home.vue",
-    "chunkName": "pages/Home"
-=======
-    "component": "D:\\\\GitHub\\\\snitch-shopify\\\\pages\\\\Home.vue",
-    "chunkName": "pages/Home",
-    "_name": "_66debb48"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-  },
-  {
-    "name": "MyAccount___en",
-    "path": "/MyAccount",
-<<<<<<< HEAD
-    "component": "D:\\\\AUKI\\\\Shopify\\\\snitch-shopify\\\\pages\\\\MyAccount.vue",
-=======
-    "component": "D:\\\\GitHub\\\\snitch-shopify\\\\pages\\\\MyAccount.vue",
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-    "chunkName": "pages/MyAccount",
-    "children": [
-      {
-        "name": "MyAccount-AdressBook___en",
-        "path": "AdressBook",
-<<<<<<< HEAD
-        "component": "D:\\\\AUKI\\\\Shopify\\\\snitch-shopify\\\\pages\\\\MyAccount\\\\AdressBook.vue",
-        "chunkName": "pages/MyAccount/AdressBook"
-=======
-        "component": "D:\\\\GitHub\\\\snitch-shopify\\\\pages\\\\MyAccount\\\\AdressBook.vue",
-        "chunkName": "pages/MyAccount/AdressBook",
-        "_name": "_f80d8232"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-      },
-      {
-        "name": "MyAccount-BillingDetails___en",
-        "path": "BillingDetails",
-<<<<<<< HEAD
-        "component": "D:\\\\AUKI\\\\Shopify\\\\snitch-shopify\\\\pages\\\\MyAccount\\\\BillingDetails.vue",
-        "chunkName": "pages/MyAccount/BillingDetails"
-=======
-        "component": "D:\\\\GitHub\\\\snitch-shopify\\\\pages\\\\MyAccount\\\\BillingDetails.vue",
-        "chunkName": "pages/MyAccount/BillingDetails",
-        "_name": "_179807af"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-      },
-      {
-        "name": "MyAccount-LoyaltyCard___en",
-        "path": "LoyaltyCard",
-<<<<<<< HEAD
-        "component": "D:\\\\AUKI\\\\Shopify\\\\snitch-shopify\\\\pages\\\\MyAccount\\\\LoyaltyCard.vue",
-        "chunkName": "pages/MyAccount/LoyaltyCard"
-=======
-        "component": "D:\\\\GitHub\\\\snitch-shopify\\\\pages\\\\MyAccount\\\\LoyaltyCard.vue",
-        "chunkName": "pages/MyAccount/LoyaltyCard",
-        "_name": "_01a3de84"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-      },
-      {
-        "name": "MyAccount-MyNewsletter___en",
-        "path": "MyNewsletter",
-<<<<<<< HEAD
-        "component": "D:\\\\AUKI\\\\Shopify\\\\snitch-shopify\\\\pages\\\\MyAccount\\\\MyNewsletter.vue",
-        "chunkName": "pages/MyAccount/MyNewsletter"
-=======
-        "component": "D:\\\\GitHub\\\\snitch-shopify\\\\pages\\\\MyAccount\\\\MyNewsletter.vue",
-        "chunkName": "pages/MyAccount/MyNewsletter",
-        "_name": "_4271dced"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-      },
-      {
-        "name": "MyAccount-MyProfile___en",
-        "path": "MyProfile",
-<<<<<<< HEAD
-        "component": "D:\\\\AUKI\\\\Shopify\\\\snitch-shopify\\\\pages\\\\MyAccount\\\\MyProfile.vue",
-        "chunkName": "pages/MyAccount/MyProfile"
-=======
-        "component": "D:\\\\GitHub\\\\snitch-shopify\\\\pages\\\\MyAccount\\\\MyProfile.vue",
-        "chunkName": "pages/MyAccount/MyProfile",
-        "_name": "_213ca9b6"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-      },
-      {
-        "name": "MyAccount-MyReviews___en",
-        "path": "MyReviews",
-<<<<<<< HEAD
-        "component": "D:\\\\AUKI\\\\Shopify\\\\snitch-shopify\\\\pages\\\\MyAccount\\\\MyReviews.vue",
-        "chunkName": "pages/MyAccount/MyReviews"
-=======
-        "component": "D:\\\\GitHub\\\\snitch-shopify\\\\pages\\\\MyAccount\\\\MyReviews.vue",
-        "chunkName": "pages/MyAccount/MyReviews",
-        "_name": "_36e48c97"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-      },
-      {
-        "name": "MyAccount-OrderHistory___en",
-        "path": "OrderHistory",
-<<<<<<< HEAD
-        "component": "D:\\\\AUKI\\\\Shopify\\\\snitch-shopify\\\\pages\\\\MyAccount\\\\OrderHistory.vue",
-        "chunkName": "pages/MyAccount/OrderHistory"
-=======
-        "component": "D:\\\\GitHub\\\\snitch-shopify\\\\pages\\\\MyAccount\\\\OrderHistory.vue",
-        "chunkName": "pages/MyAccount/OrderHistory",
-        "_name": "_1db6fe4e"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-      },
-      {
-        "name": "MyAccount-ShippingDetails___en",
-        "path": "ShippingDetails",
-<<<<<<< HEAD
-        "component": "D:\\\\AUKI\\\\Shopify\\\\snitch-shopify\\\\pages\\\\MyAccount\\\\ShippingDetails.vue",
-        "chunkName": "pages/MyAccount/ShippingDetails"
-=======
-        "component": "D:\\\\GitHub\\\\snitch-shopify\\\\pages\\\\MyAccount\\\\ShippingDetails.vue",
-        "chunkName": "pages/MyAccount/ShippingDetails",
-        "_name": "_e9775408"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-      }
-    ],
-    "_name": "_2f70c448"
-  },
-  {
-    "name": "Product___en",
-    "path": "/Product",
-<<<<<<< HEAD
-    "component": "D:\\\\AUKI\\\\Shopify\\\\snitch-shopify\\\\pages\\\\Product.vue",
-    "chunkName": "pages/Product"
-=======
-    "component": "D:\\\\GitHub\\\\snitch-shopify\\\\pages\\\\Product.vue",
-    "chunkName": "pages/Product",
-    "_name": "_2d1271d4"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-  },
-  {
-    "name": "reset-password___en",
-    "path": "/reset-password",
-<<<<<<< HEAD
-    "component": "D:\\AUKI\\Shopify\\snitch-shopify\\pages\\ResetPassword.vue"
-=======
-    "component": "D:\\GitHub\\snitch-shopify\\pages\\ResetPassword.vue",
-    "_name": "_0bccb44a"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-  },
-  {
-    "name": "ResetPassword___en",
-    "path": "/ResetPassword",
-<<<<<<< HEAD
-    "component": "D:\\\\AUKI\\\\Shopify\\\\snitch-shopify\\\\pages\\\\ResetPassword.vue",
-    "chunkName": "pages/ResetPassword"
-=======
-    "component": "D:\\\\GitHub\\\\snitch-shopify\\\\pages\\\\ResetPassword.vue",
-    "chunkName": "pages/ResetPassword",
-    "_name": "_ad8dab1e"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-  },
-  {
-    "name": "Category___de",
-    "path": "/de/Category",
-<<<<<<< HEAD
-    "component": "D:\\\\AUKI\\\\Shopify\\\\snitch-shopify\\\\pages\\\\Category.vue",
-    "chunkName": "pages/Category"
-=======
-    "component": "D:\\\\GitHub\\\\snitch-shopify\\\\pages\\\\Category.vue",
-    "chunkName": "pages/Category",
-    "_name": "_24f14b67"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-  },
-  {
-    "name": "checkout___de",
-    "path": "/de/checkout",
-<<<<<<< HEAD
-    "component": "D:\\AUKI\\Shopify\\snitch-shopify\\pages\\Checkout.vue",
-=======
-    "component": "D:\\GitHub\\snitch-shopify\\pages\\Checkout.vue",
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-    "children": [
-      {
-        "path": "billing",
-        "name": "billing___de",
-<<<<<<< HEAD
-        "component": "D:\\AUKI\\Shopify\\snitch-shopify\\pages\\Checkout\\Billing.vue"
-=======
-        "component": "D:\\GitHub\\snitch-shopify\\pages\\Checkout\\Billing.vue",
-        "_name": "_151cc804"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-      },
-      {
-        "path": "payment",
-        "name": "payment___de",
-<<<<<<< HEAD
-        "component": "D:\\AUKI\\Shopify\\snitch-shopify\\pages\\Checkout\\Payment.vue"
-=======
-        "component": "D:\\GitHub\\snitch-shopify\\pages\\Checkout\\Payment.vue",
-        "_name": "_9867cbe2"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-      },
-      {
-        "path": "shipping",
-        "name": "shipping___de",
-<<<<<<< HEAD
-        "component": "D:\\AUKI\\Shopify\\snitch-shopify\\pages\\Checkout\\Shipping.vue"
-=======
-        "component": "D:\\GitHub\\snitch-shopify\\pages\\Checkout\\Shipping.vue",
-        "_name": "_63932216"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-      },
-      {
-        "path": "thank-you",
-        "name": "thank-you___de",
-<<<<<<< HEAD
-        "component": "D:\\AUKI\\Shopify\\snitch-shopify\\pages\\Checkout\\ThankYou.vue"
-=======
-        "component": "D:\\GitHub\\snitch-shopify\\pages\\Checkout\\ThankYou.vue",
-        "_name": "_90778ac8"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-      }
-    ],
-    "_name": "_311f0205"
-  },
-  {
-    "name": "Checkout___de",
-    "path": "/de/Checkout",
-<<<<<<< HEAD
-    "component": "D:\\\\AUKI\\\\Shopify\\\\snitch-shopify\\\\pages\\\\Checkout.vue",
-=======
-    "component": "D:\\\\GitHub\\\\snitch-shopify\\\\pages\\\\Checkout.vue",
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-    "chunkName": "pages/Checkout",
-    "children": [
-      {
-        "name": "Checkout-Billing___de",
-        "path": "Billing",
-<<<<<<< HEAD
-        "component": "D:\\\\AUKI\\\\Shopify\\\\snitch-shopify\\\\pages\\\\Checkout\\\\Billing.vue",
-        "chunkName": "pages/Checkout/Billing"
-=======
-        "component": "D:\\\\GitHub\\\\snitch-shopify\\\\pages\\\\Checkout\\\\Billing.vue",
-        "chunkName": "pages/Checkout/Billing",
-        "_name": "_5ceb90bc"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-      },
-      {
-        "name": "Checkout-Payment___de",
-        "path": "Payment",
-<<<<<<< HEAD
-        "component": "D:\\\\AUKI\\\\Shopify\\\\snitch-shopify\\\\pages\\\\Checkout\\\\Payment.vue",
-        "chunkName": "pages/Checkout/Payment"
-=======
-        "component": "D:\\\\GitHub\\\\snitch-shopify\\\\pages\\\\Checkout\\\\Payment.vue",
-        "chunkName": "pages/Checkout/Payment",
-        "_name": "_08ca3a72"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-      },
-      {
-        "name": "Checkout-Shipping___de",
-        "path": "Shipping",
-<<<<<<< HEAD
-        "component": "D:\\\\AUKI\\\\Shopify\\\\snitch-shopify\\\\pages\\\\Checkout\\\\Shipping.vue",
-        "chunkName": "pages/Checkout/Shipping"
-=======
-        "component": "D:\\\\GitHub\\\\snitch-shopify\\\\pages\\\\Checkout\\\\Shipping.vue",
-        "chunkName": "pages/Checkout/Shipping",
-        "_name": "_ff7e8586"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-      },
-      {
-        "name": "Checkout-ThankYou___de",
-        "path": "ThankYou",
-<<<<<<< HEAD
-        "component": "D:\\\\AUKI\\\\Shopify\\\\snitch-shopify\\\\pages\\\\Checkout\\\\ThankYou.vue",
-        "chunkName": "pages/Checkout/ThankYou"
-=======
-        "component": "D:\\\\GitHub\\\\snitch-shopify\\\\pages\\\\Checkout\\\\ThankYou.vue",
-        "chunkName": "pages/Checkout/ThankYou",
-        "_name": "_69ce88e4"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-      }
-    ],
-    "_name": "_62b877af"
-  },
-  {
-    "name": "ContactUs___de",
-    "path": "/de/ContactUs",
-<<<<<<< HEAD
-    "component": "D:\\\\AUKI\\\\Shopify\\\\snitch-shopify\\\\pages\\\\ContactUs.vue",
-    "chunkName": "pages/ContactUs"
-=======
-    "component": "D:\\\\GitHub\\\\snitch-shopify\\\\pages\\\\ContactUs.vue",
-    "chunkName": "pages/ContactUs",
-    "_name": "_e07cec76"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-  },
-  {
-    "name": "Home___de",
-    "path": "/de/Home",
-<<<<<<< HEAD
-    "component": "D:\\\\AUKI\\\\Shopify\\\\snitch-shopify\\\\pages\\\\Home.vue",
-    "chunkName": "pages/Home"
-=======
-    "component": "D:\\\\GitHub\\\\snitch-shopify\\\\pages\\\\Home.vue",
-    "chunkName": "pages/Home",
-    "_name": "_66debb48"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-  },
-  {
-    "name": "MyAccount___de",
-    "path": "/de/MyAccount",
-<<<<<<< HEAD
-    "component": "D:\\\\AUKI\\\\Shopify\\\\snitch-shopify\\\\pages\\\\MyAccount.vue",
-=======
-    "component": "D:\\\\GitHub\\\\snitch-shopify\\\\pages\\\\MyAccount.vue",
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-    "chunkName": "pages/MyAccount",
-    "children": [
-      {
-        "name": "MyAccount-AdressBook___de",
-        "path": "AdressBook",
-<<<<<<< HEAD
-        "component": "D:\\\\AUKI\\\\Shopify\\\\snitch-shopify\\\\pages\\\\MyAccount\\\\AdressBook.vue",
-        "chunkName": "pages/MyAccount/AdressBook"
-=======
-        "component": "D:\\\\GitHub\\\\snitch-shopify\\\\pages\\\\MyAccount\\\\AdressBook.vue",
-        "chunkName": "pages/MyAccount/AdressBook",
-        "_name": "_f80d8232"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-      },
-      {
-        "name": "MyAccount-BillingDetails___de",
-        "path": "BillingDetails",
-<<<<<<< HEAD
-        "component": "D:\\\\AUKI\\\\Shopify\\\\snitch-shopify\\\\pages\\\\MyAccount\\\\BillingDetails.vue",
-        "chunkName": "pages/MyAccount/BillingDetails"
-=======
-        "component": "D:\\\\GitHub\\\\snitch-shopify\\\\pages\\\\MyAccount\\\\BillingDetails.vue",
-        "chunkName": "pages/MyAccount/BillingDetails",
-        "_name": "_179807af"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-      },
-      {
-        "name": "MyAccount-LoyaltyCard___de",
-        "path": "LoyaltyCard",
-<<<<<<< HEAD
-        "component": "D:\\\\AUKI\\\\Shopify\\\\snitch-shopify\\\\pages\\\\MyAccount\\\\LoyaltyCard.vue",
-        "chunkName": "pages/MyAccount/LoyaltyCard"
-=======
-        "component": "D:\\\\GitHub\\\\snitch-shopify\\\\pages\\\\MyAccount\\\\LoyaltyCard.vue",
-        "chunkName": "pages/MyAccount/LoyaltyCard",
-        "_name": "_01a3de84"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-      },
-      {
-        "name": "MyAccount-MyNewsletter___de",
-        "path": "MyNewsletter",
-<<<<<<< HEAD
-        "component": "D:\\\\AUKI\\\\Shopify\\\\snitch-shopify\\\\pages\\\\MyAccount\\\\MyNewsletter.vue",
-        "chunkName": "pages/MyAccount/MyNewsletter"
-=======
-        "component": "D:\\\\GitHub\\\\snitch-shopify\\\\pages\\\\MyAccount\\\\MyNewsletter.vue",
-        "chunkName": "pages/MyAccount/MyNewsletter",
-        "_name": "_4271dced"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-      },
-      {
-        "name": "MyAccount-MyProfile___de",
-        "path": "MyProfile",
-<<<<<<< HEAD
-        "component": "D:\\\\AUKI\\\\Shopify\\\\snitch-shopify\\\\pages\\\\MyAccount\\\\MyProfile.vue",
-        "chunkName": "pages/MyAccount/MyProfile"
-=======
-        "component": "D:\\\\GitHub\\\\snitch-shopify\\\\pages\\\\MyAccount\\\\MyProfile.vue",
-        "chunkName": "pages/MyAccount/MyProfile",
-        "_name": "_213ca9b6"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-      },
-      {
-        "name": "MyAccount-MyReviews___de",
-        "path": "MyReviews",
-<<<<<<< HEAD
-        "component": "D:\\\\AUKI\\\\Shopify\\\\snitch-shopify\\\\pages\\\\MyAccount\\\\MyReviews.vue",
-        "chunkName": "pages/MyAccount/MyReviews"
-=======
-        "component": "D:\\\\GitHub\\\\snitch-shopify\\\\pages\\\\MyAccount\\\\MyReviews.vue",
-        "chunkName": "pages/MyAccount/MyReviews",
-        "_name": "_36e48c97"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-      },
-      {
-        "name": "MyAccount-OrderHistory___de",
-        "path": "OrderHistory",
-<<<<<<< HEAD
-        "component": "D:\\\\AUKI\\\\Shopify\\\\snitch-shopify\\\\pages\\\\MyAccount\\\\OrderHistory.vue",
-        "chunkName": "pages/MyAccount/OrderHistory"
-=======
-        "component": "D:\\\\GitHub\\\\snitch-shopify\\\\pages\\\\MyAccount\\\\OrderHistory.vue",
-        "chunkName": "pages/MyAccount/OrderHistory",
-        "_name": "_1db6fe4e"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-      },
-      {
-        "name": "MyAccount-ShippingDetails___de",
-        "path": "ShippingDetails",
-<<<<<<< HEAD
-        "component": "D:\\\\AUKI\\\\Shopify\\\\snitch-shopify\\\\pages\\\\MyAccount\\\\ShippingDetails.vue",
-        "chunkName": "pages/MyAccount/ShippingDetails"
-=======
-        "component": "D:\\\\GitHub\\\\snitch-shopify\\\\pages\\\\MyAccount\\\\ShippingDetails.vue",
-        "chunkName": "pages/MyAccount/ShippingDetails",
-        "_name": "_e9775408"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-      }
-    ],
-    "_name": "_2f70c448"
-  },
-  {
-    "name": "Product___de",
-    "path": "/de/Product",
-<<<<<<< HEAD
-    "component": "D:\\\\AUKI\\\\Shopify\\\\snitch-shopify\\\\pages\\\\Product.vue",
-    "chunkName": "pages/Product"
-=======
-    "component": "D:\\\\GitHub\\\\snitch-shopify\\\\pages\\\\Product.vue",
-    "chunkName": "pages/Product",
-    "_name": "_2d1271d4"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-  },
-  {
-    "name": "reset-password___de",
-    "path": "/de/reset-password",
-<<<<<<< HEAD
-    "component": "D:\\AUKI\\Shopify\\snitch-shopify\\pages\\ResetPassword.vue"
-=======
-    "component": "D:\\GitHub\\snitch-shopify\\pages\\ResetPassword.vue",
-    "_name": "_0bccb44a"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-  },
-  {
-    "name": "ResetPassword___de",
-    "path": "/de/ResetPassword",
-<<<<<<< HEAD
-    "component": "D:\\\\AUKI\\\\Shopify\\\\snitch-shopify\\\\pages\\\\ResetPassword.vue",
-    "chunkName": "pages/ResetPassword"
-=======
-    "component": "D:\\\\GitHub\\\\snitch-shopify\\\\pages\\\\ResetPassword.vue",
-    "chunkName": "pages/ResetPassword",
-    "_name": "_ad8dab1e"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-  },
-  {
-    "name": "my-account___de",
-    "path": "/de/my-account/:pageName?",
-<<<<<<< HEAD
-    "component": "D:\\AUKI\\Shopify\\snitch-shopify\\pages\\MyAccount.vue"
-=======
-    "component": "D:\\GitHub\\snitch-shopify\\pages\\MyAccount.vue",
-    "_name": "_2ddb84b2"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-  },
-  {
-    "name": "product___de",
-    "path": "/de/p/:id/:slug",
-<<<<<<< HEAD
-    "component": "D:\\AUKI\\Shopify\\snitch-shopify\\pages\\Product.vue"
-=======
-    "component": "D:\\GitHub\\snitch-shopify\\pages\\Product.vue",
-    "_name": "_c4eacc00"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-  },
-  {
-    "name": "category___de",
-    "path": "/de/c/:slug_1/:slug_2?/:slug_3?/:slug_4?/:slug_5?",
-<<<<<<< HEAD
-    "component": "D:\\AUKI\\Shopify\\snitch-shopify\\pages\\Category.vue"
-=======
-    "component": "D:\\GitHub\\snitch-shopify\\pages\\Category.vue",
-    "_name": "_19505486"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-  },
-  {
-    "name": "my-account___en",
-    "path": "/my-account/:pageName?",
-<<<<<<< HEAD
-    "component": "D:\\AUKI\\Shopify\\snitch-shopify\\pages\\MyAccount.vue"
-=======
-    "component": "D:\\GitHub\\snitch-shopify\\pages\\MyAccount.vue",
-    "_name": "_2ddb84b2"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-  },
-  {
-    "name": "product___en",
-    "path": "/p/:id/:slug",
-<<<<<<< HEAD
-    "component": "D:\\AUKI\\Shopify\\snitch-shopify\\pages\\Product.vue"
-=======
-    "component": "D:\\GitHub\\snitch-shopify\\pages\\Product.vue",
-    "_name": "_c4eacc00"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-  },
-  {
-    "name": "category___en",
-    "path": "/c/:slug_1/:slug_2?/:slug_3?/:slug_4?/:slug_5?",
-<<<<<<< HEAD
-    "component": "D:\\AUKI\\Shopify\\snitch-shopify\\pages\\Category.vue"
-=======
-    "component": "D:\\GitHub\\snitch-shopify\\pages\\Category.vue",
-    "_name": "_19505486"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-  },
-  {
-    "name": "home___en",
-    "path": "/",
-<<<<<<< HEAD
-    "component": "D:\\AUKI\\Shopify\\snitch-shopify\\pages\\Home.vue"
-=======
-    "component": "D:\\GitHub\\snitch-shopify\\pages\\Home.vue",
-    "_name": "_11a3e09e"
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
-  }
-]
+        {
+          "name": "Category___en",
+          "path": "/Category",
+          "component": "D:\\\\AUKI\\\\Vue-New\\\\shopify\\\\snitch-shopify\\\\pages\\\\Category.vue",
+          "chunkName": "pages/Category",
+          "_name": "_6c77f62a"
+        },
+        {
+          "name": "checkout___en",
+          "path": "/checkout",
+          "component": "D:\\AUKI\\Vue-New\\shopify\\snitch-shopify\\pages\\Checkout.vue",
+          "children": [
+            {
+              "path": "billing",
+              "name": "billing___en",
+              "component": "D:\\AUKI\\Vue-New\\shopify\\snitch-shopify\\pages\\Checkout\\Billing.vue",
+              "_name": "_5531b15a"
+            },
+            {
+              "path": "payment",
+              "name": "payment___en",
+              "component": "D:\\AUKI\\Vue-New\\shopify\\snitch-shopify\\pages\\Checkout\\Payment.vue",
+              "_name": "_183df936"
+            },
+            {
+              "path": "shipping",
+              "name": "shipping___en",
+              "component": "D:\\AUKI\\Vue-New\\shopify\\snitch-shopify\\pages\\Checkout\\Shipping.vue",
+              "_name": "_de829f42"
+            },
+            {
+              "path": "thank-you",
+              "name": "thank-you___en",
+              "component": "D:\\AUKI\\Vue-New\\shopify\\snitch-shopify\\pages\\Checkout\\ThankYou.vue",
+              "_name": "_7a4c7c06"
+            }
+          ],
+          "_name": "_b174bd4a"
+        },
+        {
+          "name": "Checkout___en",
+          "path": "/Checkout",
+          "component": "D:\\\\AUKI\\\\Vue-New\\\\shopify\\\\snitch-shopify\\\\pages\\\\Checkout.vue",
+          "chunkName": "pages/Checkout",
+          "children": [
+            {
+              "name": "Checkout-Billing___en",
+              "path": "Billing",
+              "component": "D:\\\\AUKI\\\\Vue-New\\\\shopify\\\\snitch-shopify\\\\pages\\\\Checkout\\\\Billing.vue",
+              "chunkName": "pages/Checkout/Billing",
+              "_name": "_0cf74bb8"
+            },
+            {
+              "name": "Checkout-Payment___en",
+              "path": "Payment",
+              "component": "D:\\\\AUKI\\\\Vue-New\\\\shopify\\\\snitch-shopify\\\\pages\\\\Checkout\\\\Payment.vue",
+              "chunkName": "pages/Checkout/Payment",
+              "_name": "_a8b2c47a"
+            },
+            {
+              "name": "Checkout-Shipping___en",
+              "path": "Shipping",
+              "component": "D:\\\\AUKI\\\\Vue-New\\\\shopify\\\\snitch-shopify\\\\pages\\\\Checkout\\\\Shipping.vue",
+              "chunkName": "pages/Checkout/Shipping",
+              "_name": "_5ca73c7e"
+            },
+            {
+              "name": "Checkout-ThankYou___en",
+              "path": "ThankYou",
+              "component": "D:\\\\AUKI\\\\Vue-New\\\\shopify\\\\snitch-shopify\\\\pages\\\\Checkout\\\\ThankYou.vue",
+              "chunkName": "pages/Checkout/ThankYou",
+              "_name": "_898ba530"
+            }
+          ],
+          "_name": "_078b3133"
+        },
+        {
+          "name": "ContactUs___en",
+          "path": "/ContactUs",
+          "component": "D:\\\\AUKI\\\\Vue-New\\\\shopify\\\\snitch-shopify\\\\pages\\\\ContactUs.vue",
+          "chunkName": "pages/ContactUs",
+          "_name": "_f573fe7e"
+        },
+        {
+          "name": "home___de",
+          "path": "/de",
+          "component": "D:\\AUKI\\Vue-New\\shopify\\snitch-shopify\\pages\\Home.vue",
+          "_name": "_097b9af4"
+        },
+        {
+          "name": "Home___en",
+          "path": "/Home",
+          "component": "D:\\\\AUKI\\\\Vue-New\\\\shopify\\\\snitch-shopify\\\\pages\\\\Home.vue",
+          "chunkName": "pages/Home",
+          "_name": "_31f2d6cc"
+        },
+        {
+          "name": "MyAccount___en",
+          "path": "/MyAccount",
+          "component": "D:\\\\AUKI\\\\Vue-New\\\\shopify\\\\snitch-shopify\\\\pages\\\\MyAccount.vue",
+          "chunkName": "pages/MyAccount",
+          "children": [
+            {
+              "name": "MyAccount-AdressBook___en",
+              "path": "AdressBook",
+              "component": "D:\\\\AUKI\\\\Vue-New\\\\shopify\\\\snitch-shopify\\\\pages\\\\MyAccount\\\\AdressBook.vue",
+              "chunkName": "pages/MyAccount/AdressBook",
+              "_name": "_fd11c83a"
+            },
+            {
+              "name": "MyAccount-BillingDetails___en",
+              "path": "BillingDetails",
+              "component": "D:\\\\AUKI\\\\Vue-New\\\\shopify\\\\snitch-shopify\\\\pages\\\\MyAccount\\\\BillingDetails.vue",
+              "chunkName": "pages/MyAccount/BillingDetails",
+              "_name": "_38a706ab"
+            },
+            {
+              "name": "MyAccount-LoyaltyCard___en",
+              "path": "LoyaltyCard",
+              "component": "D:\\\\AUKI\\\\Vue-New\\\\shopify\\\\snitch-shopify\\\\pages\\\\MyAccount\\\\LoyaltyCard.vue",
+              "chunkName": "pages/MyAccount/LoyaltyCard",
+              "_name": "_9d28597c"
+            },
+            {
+              "name": "MyAccount-MyNewsletter___en",
+              "path": "MyNewsletter",
+              "component": "D:\\\\AUKI\\\\Vue-New\\\\shopify\\\\snitch-shopify\\\\pages\\\\MyAccount\\\\MyNewsletter.vue",
+              "chunkName": "pages/MyAccount/MyNewsletter",
+              "_name": "_50272a2e"
+            },
+            {
+              "name": "MyAccount-MyProfile___en",
+              "path": "MyProfile",
+              "component": "D:\\\\AUKI\\\\Vue-New\\\\shopify\\\\snitch-shopify\\\\pages\\\\MyAccount\\\\MyProfile.vue",
+              "chunkName": "pages/MyAccount/MyProfile",
+              "_name": "_d71382ae"
+            },
+            {
+              "name": "MyAccount-MyReviews___en",
+              "path": "MyReviews",
+              "component": "D:\\\\AUKI\\\\Vue-New\\\\shopify\\\\snitch-shopify\\\\pages\\\\MyAccount\\\\MyReviews.vue",
+              "chunkName": "pages/MyAccount/MyReviews",
+              "_name": "_480dbfca"
+            },
+            {
+              "name": "MyAccount-OrderHistory___en",
+              "path": "OrderHistory",
+              "component": "D:\\\\AUKI\\\\Vue-New\\\\shopify\\\\snitch-shopify\\\\pages\\\\MyAccount\\\\OrderHistory.vue",
+              "chunkName": "pages/MyAccount/OrderHistory",
+              "_name": "_999ce76c"
+            },
+            {
+              "name": "MyAccount-ShippingDetails___en",
+              "path": "ShippingDetails",
+              "component": "D:\\\\AUKI\\\\Vue-New\\\\shopify\\\\snitch-shopify\\\\pages\\\\MyAccount\\\\ShippingDetails.vue",
+              "chunkName": "pages/MyAccount/ShippingDetails",
+              "_name": "_e7d59300"
+            }
+          ],
+          "_name": "_24f53b44"
+        },
+        {
+          "name": "Product___en",
+          "path": "/Product",
+          "component": "D:\\\\AUKI\\\\Vue-New\\\\shopify\\\\snitch-shopify\\\\pages\\\\Product.vue",
+          "chunkName": "pages/Product",
+          "_name": "_6264cd12"
+        },
+        {
+          "name": "reset-password___en",
+          "path": "/reset-password",
+          "component": "D:\\AUKI\\Vue-New\\shopify\\snitch-shopify\\pages\\ResetPassword.vue",
+          "_name": "_50ff2c45"
+        },
+        {
+          "name": "ResetPassword___en",
+          "path": "/ResetPassword",
+          "component": "D:\\\\AUKI\\\\Vue-New\\\\shopify\\\\snitch-shopify\\\\pages\\\\ResetPassword.vue",
+          "chunkName": "pages/ResetPassword",
+          "_name": "_6d1c7926"
+        },
+        {
+          "name": "Category___de",
+          "path": "/de/Category",
+          "component": "D:\\\\AUKI\\\\Vue-New\\\\shopify\\\\snitch-shopify\\\\pages\\\\Category.vue",
+          "chunkName": "pages/Category",
+          "_name": "_6c77f62a"
+        },
+        {
+          "name": "checkout___de",
+          "path": "/de/checkout",
+          "component": "D:\\AUKI\\Vue-New\\shopify\\snitch-shopify\\pages\\Checkout.vue",
+          "children": [
+            {
+              "path": "billing",
+              "name": "billing___de",
+              "component": "D:\\AUKI\\Vue-New\\shopify\\snitch-shopify\\pages\\Checkout\\Billing.vue",
+              "_name": "_5531b15a"
+            },
+            {
+              "path": "payment",
+              "name": "payment___de",
+              "component": "D:\\AUKI\\Vue-New\\shopify\\snitch-shopify\\pages\\Checkout\\Payment.vue",
+              "_name": "_183df936"
+            },
+            {
+              "path": "shipping",
+              "name": "shipping___de",
+              "component": "D:\\AUKI\\Vue-New\\shopify\\snitch-shopify\\pages\\Checkout\\Shipping.vue",
+              "_name": "_de829f42"
+            },
+            {
+              "path": "thank-you",
+              "name": "thank-you___de",
+              "component": "D:\\AUKI\\Vue-New\\shopify\\snitch-shopify\\pages\\Checkout\\ThankYou.vue",
+              "_name": "_7a4c7c06"
+            }
+          ],
+          "_name": "_b174bd4a"
+        },
+        {
+          "name": "Checkout___de",
+          "path": "/de/Checkout",
+          "component": "D:\\\\AUKI\\\\Vue-New\\\\shopify\\\\snitch-shopify\\\\pages\\\\Checkout.vue",
+          "chunkName": "pages/Checkout",
+          "children": [
+            {
+              "name": "Checkout-Billing___de",
+              "path": "Billing",
+              "component": "D:\\\\AUKI\\\\Vue-New\\\\shopify\\\\snitch-shopify\\\\pages\\\\Checkout\\\\Billing.vue",
+              "chunkName": "pages/Checkout/Billing",
+              "_name": "_0cf74bb8"
+            },
+            {
+              "name": "Checkout-Payment___de",
+              "path": "Payment",
+              "component": "D:\\\\AUKI\\\\Vue-New\\\\shopify\\\\snitch-shopify\\\\pages\\\\Checkout\\\\Payment.vue",
+              "chunkName": "pages/Checkout/Payment",
+              "_name": "_a8b2c47a"
+            },
+            {
+              "name": "Checkout-Shipping___de",
+              "path": "Shipping",
+              "component": "D:\\\\AUKI\\\\Vue-New\\\\shopify\\\\snitch-shopify\\\\pages\\\\Checkout\\\\Shipping.vue",
+              "chunkName": "pages/Checkout/Shipping",
+              "_name": "_5ca73c7e"
+            },
+            {
+              "name": "Checkout-ThankYou___de",
+              "path": "ThankYou",
+              "component": "D:\\\\AUKI\\\\Vue-New\\\\shopify\\\\snitch-shopify\\\\pages\\\\Checkout\\\\ThankYou.vue",
+              "chunkName": "pages/Checkout/ThankYou",
+              "_name": "_898ba530"
+            }
+          ],
+          "_name": "_078b3133"
+        },
+        {
+          "name": "ContactUs___de",
+          "path": "/de/ContactUs",
+          "component": "D:\\\\AUKI\\\\Vue-New\\\\shopify\\\\snitch-shopify\\\\pages\\\\ContactUs.vue",
+          "chunkName": "pages/ContactUs",
+          "_name": "_f573fe7e"
+        },
+        {
+          "name": "Home___de",
+          "path": "/de/Home",
+          "component": "D:\\\\AUKI\\\\Vue-New\\\\shopify\\\\snitch-shopify\\\\pages\\\\Home.vue",
+          "chunkName": "pages/Home",
+          "_name": "_31f2d6cc"
+        },
+        {
+          "name": "MyAccount___de",
+          "path": "/de/MyAccount",
+          "component": "D:\\\\AUKI\\\\Vue-New\\\\shopify\\\\snitch-shopify\\\\pages\\\\MyAccount.vue",
+          "chunkName": "pages/MyAccount",
+          "children": [
+            {
+              "name": "MyAccount-AdressBook___de",
+              "path": "AdressBook",
+              "component": "D:\\\\AUKI\\\\Vue-New\\\\shopify\\\\snitch-shopify\\\\pages\\\\MyAccount\\\\AdressBook.vue",
+              "chunkName": "pages/MyAccount/AdressBook",
+              "_name": "_fd11c83a"
+            },
+            {
+              "name": "MyAccount-BillingDetails___de",
+              "path": "BillingDetails",
+              "component": "D:\\\\AUKI\\\\Vue-New\\\\shopify\\\\snitch-shopify\\\\pages\\\\MyAccount\\\\BillingDetails.vue",
+              "chunkName": "pages/MyAccount/BillingDetails",
+              "_name": "_38a706ab"
+            },
+            {
+              "name": "MyAccount-LoyaltyCard___de",
+              "path": "LoyaltyCard",
+              "component": "D:\\\\AUKI\\\\Vue-New\\\\shopify\\\\snitch-shopify\\\\pages\\\\MyAccount\\\\LoyaltyCard.vue",
+              "chunkName": "pages/MyAccount/LoyaltyCard",
+              "_name": "_9d28597c"
+            },
+            {
+              "name": "MyAccount-MyNewsletter___de",
+              "path": "MyNewsletter",
+              "component": "D:\\\\AUKI\\\\Vue-New\\\\shopify\\\\snitch-shopify\\\\pages\\\\MyAccount\\\\MyNewsletter.vue",
+              "chunkName": "pages/MyAccount/MyNewsletter",
+              "_name": "_50272a2e"
+            },
+            {
+              "name": "MyAccount-MyProfile___de",
+              "path": "MyProfile",
+              "component": "D:\\\\AUKI\\\\Vue-New\\\\shopify\\\\snitch-shopify\\\\pages\\\\MyAccount\\\\MyProfile.vue",
+              "chunkName": "pages/MyAccount/MyProfile",
+              "_name": "_d71382ae"
+            },
+            {
+              "name": "MyAccount-MyReviews___de",
+              "path": "MyReviews",
+              "component": "D:\\\\AUKI\\\\Vue-New\\\\shopify\\\\snitch-shopify\\\\pages\\\\MyAccount\\\\MyReviews.vue",
+              "chunkName": "pages/MyAccount/MyReviews",
+              "_name": "_480dbfca"
+            },
+            {
+              "name": "MyAccount-OrderHistory___de",
+              "path": "OrderHistory",
+              "component": "D:\\\\AUKI\\\\Vue-New\\\\shopify\\\\snitch-shopify\\\\pages\\\\MyAccount\\\\OrderHistory.vue",
+              "chunkName": "pages/MyAccount/OrderHistory",
+              "_name": "_999ce76c"
+            },
+            {
+              "name": "MyAccount-ShippingDetails___de",
+              "path": "ShippingDetails",
+              "component": "D:\\\\AUKI\\\\Vue-New\\\\shopify\\\\snitch-shopify\\\\pages\\\\MyAccount\\\\ShippingDetails.vue",
+              "chunkName": "pages/MyAccount/ShippingDetails",
+              "_name": "_e7d59300"
+            }
+          ],
+          "_name": "_24f53b44"
+        },
+        {
+          "name": "Product___de",
+          "path": "/de/Product",
+          "component": "D:\\\\AUKI\\\\Vue-New\\\\shopify\\\\snitch-shopify\\\\pages\\\\Product.vue",
+          "chunkName": "pages/Product",
+          "_name": "_6264cd12"
+        },
+        {
+          "name": "reset-password___de",
+          "path": "/de/reset-password",
+          "component": "D:\\AUKI\\Vue-New\\shopify\\snitch-shopify\\pages\\ResetPassword.vue",
+          "_name": "_50ff2c45"
+        },
+        {
+          "name": "ResetPassword___de",
+          "path": "/de/ResetPassword",
+          "component": "D:\\\\AUKI\\\\Vue-New\\\\shopify\\\\snitch-shopify\\\\pages\\\\ResetPassword.vue",
+          "chunkName": "pages/ResetPassword",
+          "_name": "_6d1c7926"
+        },
+        {
+          "name": "my-account___de",
+          "path": "/de/my-account/:pageName?",
+          "component": "D:\\AUKI\\Vue-New\\shopify\\snitch-shopify\\pages\\MyAccount.vue",
+          "_name": "_7c88d01c"
+        },
+        {
+          "name": "product___de",
+          "path": "/de/p/:id/:slug",
+          "component": "D:\\AUKI\\Vue-New\\shopify\\snitch-shopify\\pages\\Product.vue",
+          "_name": "_5707b7ea"
+        },
+        {
+          "name": "category___de",
+          "path": "/de/c/:slug_1/:slug_2?/:slug_3?/:slug_4?/:slug_5?",
+          "component": "D:\\AUKI\\Vue-New\\shopify\\snitch-shopify\\pages\\Category.vue",
+          "_name": "_697e7513"
+        },
+        {
+          "name": "my-account___en",
+          "path": "/my-account/:pageName?",
+          "component": "D:\\AUKI\\Vue-New\\shopify\\snitch-shopify\\pages\\MyAccount.vue",
+          "_name": "_7c88d01c"
+        },
+        {
+          "name": "product___en",
+          "path": "/p/:id/:slug",
+          "component": "D:\\AUKI\\Vue-New\\shopify\\snitch-shopify\\pages\\Product.vue",
+          "_name": "_5707b7ea"
+        },
+        {
+          "name": "category___en",
+          "path": "/c/:slug_1/:slug_2?/:slug_3?/:slug_4?/:slug_5?",
+          "component": "D:\\AUKI\\Vue-New\\shopify\\snitch-shopify\\pages\\Category.vue",
+          "_name": "_697e7513"
+        },
+        {
+          "name": "home___en",
+          "path": "/",
+          "component": "D:\\AUKI\\Vue-New\\shopify\\snitch-shopify\\pages\\Home.vue",
+          "_name": "_097b9af4"
+        }
+      ]
+      
