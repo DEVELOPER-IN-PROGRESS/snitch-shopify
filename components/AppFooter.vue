@@ -48,7 +48,7 @@
         </SfListItem>
       </SfList>
     </SfFooterColumn>
-    <SfFooterColumn :title="$t('CUSTOMER CARE:  10 AM - 6:30 PM (Mon - Sat)')">
+    <SfFooterColumn :title="$t('CUSTOMER CARE')">
       <SfList>
         <SfListItem
           v-for="item in cc"
@@ -82,10 +82,10 @@ export default {
   data() {
     return {
       aboutsnitch: ['Encapsulating inspirations from', 'around the globe, SNITCH crafts', 'clothing for the fashion-forward','modern man. Offering an','unconventional style ethos as a','mens fast fashion brand, we','design style in response'],
-      returns: ['Click To Place Return  ', 'Returns & Exchange Policy'],
+      returns: ['Click To Place Return ', 'Returns & Exchange Policy'],
      categories: ['Shirts', 'T-Shirts', 'Jeans','Shorts','Co-ords','Boxers','Combo Deals'],
       gettoknow: ['CSR', 'FAQ','Contact Us','Terms & Conditions','Privacy Policy','Payment Terms','Track Order','Blogs'],
-      cc: ['+91 080 4710 4444','support@snitch.co.in'],
+      cc: ['+91 080 4710 4444','','','support@snitch.co.in'],
       // social: ['facebook', 'pinterest', 'google', 'twitter', 'youtube'],
       isMobile: false,
     
@@ -127,15 +127,20 @@ export default {
   &__container {
     margin: var(--spacer-sm);
     @include for-desktop {
-      max-width: 69rem;
+   
       margin: 0 auto;
     }
   }
 }
-
+.font_color{
+  color: red;
+}
 .sf-footer-column{
  background-color:#fff;
+
 }
+
+
 .sf-footer-column__title{
   color: rgb(0, 0, 0);
   background-color:#fff;
@@ -143,6 +148,13 @@ export default {
 .sf-menu-item__label{
   color:#a3a3a3;
 }
+.sf-footer__container{
+  max-width: 90rem ;
+ padding: 0px;
 
-
+}
+.sf-footer{
+   padding: 0px ;
+   padding-left: 5%;
+}
 </style>
