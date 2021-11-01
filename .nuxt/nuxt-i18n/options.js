@@ -19,11 +19,7 @@ export const options = {
   sortRoutes: true,
   strategy: "prefix_except_default",
   lazy: true,
-<<<<<<< HEAD
-  langDir: "D:\\AUKI\\Shopify\\snitch-shopify\\lang",
-=======
   langDir: "D:\\GitHub\\snitch-shopify\\lang",
->>>>>>> b29ea71a0f7a9047f55cb9f4a71c42d541c35c5e
   rootRedirect: null,
   detectBrowserLanguage: {"alwaysRedirect":false,"cookieCrossOrigin":false,"cookieDomain":null,"cookieKey":"vsf-locale","cookieSecure":false,"fallbackLocale":"","onlyOnNoPrefix":false,"onlyOnRoot":false,"useCookie":true},
   differentDomains: false,

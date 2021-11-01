@@ -43,13 +43,25 @@
       <RelatedProducts1
         :products="products"
         :loading="productsLoading"
-        title="Match it with"
+        title="Match with it"
       />
     </LazyHydrate>
 
     <Productgrid></Productgrid>
-
-    <MostLoved></MostLoved>
+    
+    <div class="gridContainer">
+      <div class="product-grid">
+        <PrCard/>
+        <PrCard/>
+        <PrCard/>
+        <PrCard/>
+        <PrCard/>
+        <PrCard/>
+        <PrCard/>
+        <PrCard/>
+    </div>
+  </div>
+     
 
     <CardContainer :categoriesList="categoriesList"></CardContainer>
     <LazyHydrate when-visible>
@@ -83,7 +95,8 @@ import RelatedProducts from "~/components/RelatedProducts.vue";
 import RelatedProducts1 from "~/components/RelatedProducts1.vue";
 import MostLoved from '~/components/MostLoved.vue';
 import Productgrid from '~/components/Productgrid.vue';
-import { useProduct, useCart, productGetters } from "@vue-storefront/shopify";
+import PrCard from  '~/components/ProductCard.vue';
+ import { useProduct, useCart, productGetters } from "@vue-storefront/shopify";
 import { computed } from "@vue/composition-api";
 import { onSSR } from "@vue-storefront/core";
 import MobileStoreBanner from "~/components/MobileStoreBanner.vue";
@@ -141,7 +154,7 @@ export default {
     CardContainer,
     MostLoved,
     Banner,
-
+    PrCard , 
   },
   // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   data() {
@@ -343,6 +356,28 @@ export default {
       --banner-container-flex: 0 0 70%;
     }
   }
+}
+
+.gridContainer{
+  display:grid;
+  place-items: center;
+  margin:0 auto; 
+}
+.product-grid{ 
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        column-gap: 14px;
+        row-gap: 5px;
+    }
+
+@media screen and(min-width:992px) {
+  .product-grid{ 
+        display: grid;
+        padding:0 26px;
+        grid-template-columns: 1fr 1fr 1fr  1fr;
+        column-gap: 20px;
+        row-gap: 25px;
+    }
 }
 
 .similar-products {
