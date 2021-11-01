@@ -1,17 +1,6 @@
 <template>
   <div id="home">
-    <SfHero class="hero">
-      <SfHeroItem
-        v-for="(hero, i) in heroes"
-        :key="i"
-        :title="hero.title"
-        :subtitle="hero.subtitle"
-        :button-text="hero.buttonText"
-        :background="hero.background"
-        :image="hero.image"
-        :class="hero.className"
-      />
-    </SfHero>
+   <CarouselBanner></CarouselBanner>
     <LazyHydrate when-visible>
       <SfBannerGrid :banner-grid="1" class="banner-grid">
         <template v-for="item in banners" v-slot:[item.slot]>
@@ -76,6 +65,7 @@
     <LazyHydrate when-visible>
       <MobileStoreBanner />
     </LazyHydrate>
+    <lower-banner></lower-banner>
   </div>
 </template>
 <script type="module">
@@ -104,6 +94,9 @@ import LazyHydrate from "vue-lazy-hydration";
 import CardContainer from "~/components/CardContainer.vue";
 import { useCategory } from "@vue-storefront/shopify";
 import Banner from '~/components/Banner.vue'
+import CarouselBanner from '~/components/CarouselBanner.vue';
+import LowerBanner from "~/components/LowerBanner.vue";
+
 export default {
   name: "Home",
   // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
@@ -155,6 +148,8 @@ export default {
     MostLoved,
     Banner,
     PrCard , 
+    CarouselBanner,
+    LowerBanner,
   },
   // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   data() {

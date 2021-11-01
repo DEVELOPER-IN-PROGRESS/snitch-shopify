@@ -95,7 +95,9 @@ export default {
 </script>
 
 <style lang="scss">
-
+span:hover{
+  color: #000000;
+}
 .footer {
   margin-bottom: 3.75rem;
   background-color:#fff;
