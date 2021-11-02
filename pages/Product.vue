@@ -18,6 +18,7 @@
         </nuxt-link>
       </template>
     </SfBreadcrumbs>
+
     <div class="product">
       <SfGallery
         :images="productGallery"
@@ -29,14 +30,17 @@
         thumbHeight="160"
       />
       <div class="product__info">
-        <div class="product__header">
-          <SfHeading
-            :title="productGetters.getName(product)"
-            :level="1"
-            class="sf-heading--no-underline sf-heading--left"
-          />
-          <div class="product_stock_wrap">
-            <SfBadge
+        <div class="product__header row">
+          <div>
+            <SfHeading
+              :title="productGetters.getName(product)"
+              :level="1"
+              class="sf-heading--no-underline sf-heading--left"
+            />
+          </div>
+
+          <!-- <div class="product_stock_wrap">
+             <SfBadge
               class="sf-badge--number"
               :class="
                 productGetters.getStockStatus(product)
@@ -49,14 +53,14 @@
                   ? "In stock"
                   : "Out of Stock"
               }}
-            </SfBadge>
+            </SfBadge> 
             <SfIcon
               icon="drag"
               size="xxl"
               color="var(--c-text-disabled)"
               class="product__drag-icon smartphone-only"
             />
-          </div>
+          </div> -->
           <div class="product__price-and-rating">
             <template
               v-if="
@@ -66,16 +70,13 @@
               "
             >
               <SfPrice
-                :regular="
-                  $n(productGetters.getPrice(product).regular, 'currency')
-                "
                 :special="
                   $n(productGetters.getPrice(product).special, 'currency')
                 "
               />
-              <SfBadge class="sf-badge--number">
+              <!-- <SfBadge class="sf-badge--number">
                 {{ productGetters.getDiscountPercentage(product) }}% off
-              </SfBadge>
+              </SfBadge> -->
             </template>
             <SfPrice
               :regular="
@@ -96,18 +97,22 @@
           </div>
         </div>
         <div>
-          <p
+          <div>
+            <p>This is the color</p>
+            <p></p>
+          </div>
+
+          <!-- <p
             class="product__description desktop-only"
             v-if="productDescription"
           >
             {{ productDescription }}
-          </p>
+          </p> -->
           <div v-if="options && Object.keys(options).length > 0">
             <template v-for="(option, o) in options">
               <SfSelect
                 v-if="o.toLowerCase() !== 'color'"
                 :key="`attrib-${o}`"
-                :data-cy="`product-select_${o.toLowerCase()}`"
                 :set="(atttLbl = o)"
                 @input="(o) => updateFilter({ [atttLbl]: o })"
                 :value="configuration[o] || options[o][0].value"
@@ -115,6 +120,8 @@
                 :class="`sf-select--underlined product__select-${o.toLowerCase()}`"
                 :required="true"
               >
+                <!-- Size chart -->
+
                 <SfSelectOption
                   v-for="(attribs, a) in option"
                   :key="`item-${a}`"
@@ -150,7 +157,7 @@
                 />
               </div>
             </template>
-          </div>
+          </div>          
           <SfAddToCart
             data-cy="product-cart_add"
             :stock="stock"
@@ -165,11 +172,12 @@
                 :disabled="loading"
                 @click="addingToCart({ product, quantity: parseInt(qty) })"
               >
-                Add to Bag
+                Add
               </SfButton>
             </template>
           </SfAddToCart>
-          <LazyHydrate when-idle>
+
+          <!-- <LazyHydrate when-idle>
             <SfTabs :open-tab="1" class="product__tabs">
               <SfTab data-cy="product-tab_description" title="Description">
                 <div class="product__description" v-if="productDescriptionHtml">
@@ -194,7 +202,7 @@
                 data-cy="product-tab_additional"
                 class="product__additional-info"
               >
-                <div class="product__additional-info">
+                 <div class="product__additional-info">
                   <p class="product__additional-info__title">
                     {{ $t("Brand") }}
                   </p>
@@ -209,26 +217,71 @@
                     {{ $t("Instruction3") }}
                   </p>
                   <p>{{ careInstructions }}</p>
-                </div>
+                </div> 
               </SfTab>
             </SfTabs>
-          </LazyHydrate>
+          </LazyHydrate> -->
+          <div>
+            <p class="deliveryoption">Delivery Options</p>
+            <input
+              class="pincodebox"
+              type="text"
+              id="PostalCode"
+              maxlength="6"
+              name="PostalCode"
+              placeholder="Enter pincode"
+            />
+            <button
+              type="button"
+              class="deliverybox"
+              onclick="checkCodAvailability()"
+            >
+              Check
+            </button>
+          </div>
+          <div>
+            <p class="deliverydialogue">
+              Please enter PIN code to check delivery time & Pay on Delivery
+              Availability
+            </p>
+            <!-- <div class="pt-5">
+              <img src="~/assets/a.png" alt="#" />
+            </div> -->
+          </div>
         </div>
       </div>
     </div>
+
+    <!-- Product Description Section -->
+
+    <div>
+      <description />
+    </div>
+
+    <div class="space"></div>
+
+    <LazyHydrate when-visible>
+      <RelatedProducts
+        :productss="this.temp"
+        :loading="relatedLoading"
+        title="Recently viewed items"
+      />
+    </LazyHydrate>
+
     <LazyHydrate when-visible>
       <RelatedProducts
         :products="relatedProducts"
         :loading="relatedLoading"
-        title="Match it with"
+        title="You may also like"
       />
     </LazyHydrate>
-    <LazyHydrate when-visible>
+
+    <!-- <LazyHydrate when-visible>
       <InstagramFeed />
-    </LazyHydrate>
-    <LazyHydrate when-visible>
+    </LazyHydrate> -->
+    <!-- <LazyHydrate when-visible>
       <MobileStoreBanner />
-    </LazyHydrate>
+    </LazyHydrate> -->
   </div>
 </template>
 <script>
@@ -251,21 +304,32 @@ import {
   SfBreadcrumbs,
   SfLoader,
   SfButton,
-  SfColor
-} from '@storefront-ui/vue';
+  SfColor,
+  SfCarousel,
+  SfProductCard,
+  SfSection,
+} from "@storefront-ui/vue";
 
-import InstagramFeed from '~/components/InstagramFeed.vue';
-import RelatedProducts from '~/components/RelatedProducts1.vue';
-import { ref, computed, watch } from '@vue/composition-api';
-import { useProduct, useCart, productGetters } from '@vue-storefront/shopify';
-import MobileStoreBanner from '~/components/MobileStoreBanner.vue';
-import LazyHydrate from 'vue-lazy-hydration';
-import { onSSR } from '@vue-storefront/core';
-import useUiNotification from '~/composables/useUiNotification';
+import InstagramFeed from "~/components/InstagramFeed.vue";
+import RelatedProducts from "~/components/RelatedProducts1.vue";
+import { ref, computed, watch } from "@vue/composition-api";
+import { useProduct, useCart, productGetters } from "@vue-storefront/shopify";
+import MobileStoreBanner from "~/components/MobileStoreBanner.vue";
+import LazyHydrate from "vue-lazy-hydration";
+import { onSSR } from "@vue-storefront/core";
+import useUiNotification from "~/composables/useUiNotification";
+import RelatedProducts1 from "~/components/RelatedProducts.vue";
+import description from "~/components/description.vue";
 
 export default {
-  name: 'Product',
-  transition: 'fade',
+  data() {
+    return {
+      recentlyviewd: [],
+      temp: [],
+    };
+  },
+  name: "Product",
+  transition: "fade",
   beforeRouteEnter(to, from, next) {
     next((vm) => {
       vm.prevRoute = from;
@@ -277,11 +341,11 @@ export default {
     async addingToCart(Productdata) {
       await this.addItem(Productdata).then(() => {
         this.sendNotification({
-          key: 'product_added',
+          key: "product_added",
           message: `${Productdata.product.name} has been successfully added to your cart.`,
-          type: 'success',
-          title: 'Product added!',
-          icon: 'check'
+          type: "success",
+          title: "Product added!",
+          icon: "check",
         });
         this.qty = 1;
       });
@@ -292,28 +356,30 @@ export default {
     },
     // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
     setGalleryWidth() {
-      const gallary = document.getElementsByClassName('product__gallery');
+      const gallary = document.getElementsByClassName("product__gallery");
       const gallerySlider =
-        gallary.length > 0 && gallary[0].querySelectorAll('.glide__slides');
+        gallary.length > 0 && gallary[0].querySelectorAll(".glide__slides");
       const galleryAllSlides =
         gallerySlider.length > 0 &&
-        gallerySlider[0].querySelectorAll('.glide__slide');
+        gallerySlider[0].querySelectorAll(".glide__slide");
       typeof galleryAllSlides !== Boolean &&
         galleryAllSlides.length > 0 &&
         galleryAllSlides.forEach((gallerySlide) => {
           gallerySlide.style.flexBasis = gallerySlide.style.width;
         });
-    }
+    },
   },
   // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   mounted() {
-    window.addEventListener('load', () => {
+    const items = JSON.parse(localStorage.getItem("recent"));
+    this.temp = items;
+    window.addEventListener("load", () => {
       this.setGalleryWidth();
     });
     this.$nextTick(() => {
       this.setGalleryWidth();
       this.setBreadcrumb();
-      window.addEventListener('resize', this.setGalleryWidth);
+      window.addEventListener("resize", this.setGalleryWidth);
     });
   },
   // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
@@ -323,27 +389,27 @@ export default {
   // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   setup(props, context) {
     const breadcrumbs = ref([]);
-    const atttLbl = '';
+    const atttLbl = "";
     const qty = ref(1);
     const { slug } = context.root.$route.params;
     const {
       loading: productloading,
       products,
-      search
-    } = useProduct('products');
+      search,
+    } = useProduct("products");
     const { send: sendNotification } = useUiNotification();
     const {
       products: relatedProducts,
       search: searchRelatedProducts,
-      loading: relatedLoading
-    } = useProduct('relatedProducts');
+      loading: relatedLoading,
+    } = useProduct("relatedProducts");
     const { addItem, loading } = useCart();
 
     const product = computed(
       () =>
         productGetters.getFiltered(products.value, {
           master: true,
-          attributes: context.root.$route.query
+          attributes: context.root.$route.query,
         })[0]
     );
     const id = computed(() => productGetters.getId(product.value));
@@ -373,17 +439,17 @@ export default {
     const setBreadcrumb = () => {
       breadcrumbs.value = [
         {
-          text: 'Home',
-          route: { link: '/' }
+          text: "Home",
+          route: { link: "/" },
         },
         {
-          text: 'products',
-          route: { link: '#' }
+          text: "products",
+          route: { link: "#" },
         },
         {
           text: productTitle.value,
-          route: { link: '#' }
-        }
+          route: { link: "#" },
+        },
       ];
     };
 
@@ -400,14 +466,14 @@ export default {
       if (product.value && product.value.images.length === 0) {
         product.value.images.push({
           originalSrc:
-            'https://cdn.shopify.com/s/files/1/0407/1902/4288/files/placeholder_600x600.jpg?v=1625742127'
+            "https://cdn.shopify.com/s/files/1/0407/1902/4288/files/placeholder_600x600.jpg?v=1625742127",
         });
       }
       return productGetters.getGallery(product.value).map((img) => ({
         mobile: { url: img.small },
         desktop: { url: img.normal },
         big: { url: img.big },
-        alt: product.value._name || product.value.name
+        alt: product.value._name || product.value.name,
       }));
     });
     const stock = computed(() => {
@@ -419,8 +485,11 @@ export default {
 
     onSSR(async () => {
       await search({ slug, selectedOptions: configuration.value }).then(() => {
-        if (productTitle.value === 'Product\'s name') {
-          return context.root.error({ statusCode: 404, message: 'This product could not be found' });
+        if (productTitle.value === "Product's name") {
+          return context.root.error({
+            statusCode: 404,
+            message: "This product could not be found",
+          });
         }
       });
       await searchRelatedProducts({ productId: id.value, related: true });
@@ -442,8 +511,8 @@ export default {
         path: context.root.$route.path,
         query: {
           ...configuration.value,
-          ...filter
-        }
+          ...filter,
+        },
       });
     };
 
@@ -472,7 +541,7 @@ export default {
       productGallery,
       productGetters,
       setBreadcrumb,
-      atttLbl
+      atttLbl,
     };
   },
   components: {
@@ -498,42 +567,53 @@ export default {
     InstagramFeed,
     RelatedProducts,
     MobileStoreBanner,
-    LazyHydrate
+    LazyHydrate,
+    SfCarousel,
+    SfProductCard,
+    SfSection,
+    RelatedProducts1,
+    description,
   },
   // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
   data() {
     return {
+      temp: [],
       stock: 5,
       properties: [
         {
-          name: 'Product Code',
-          value: '578902-00'
+          name: "Product Code",
+          value: "578902-00",
         },
         {
-          name: 'Category',
-          value: 'Pants'
+          name: "Category",
+          value: "Pants",
         },
         {
-          name: 'Material',
-          value: 'Cotton'
+          name: "Material",
+          value: "Cotton",
         },
         {
-          name: 'Country',
-          value: 'Germany'
-        }
+          name: "Country",
+          value: "Germany",
+        },
       ],
+      previous: [],
       description:
-        'Find stunning women cocktail and party dresses. Stand out in lace and metallic cocktail dresses and party dresses from all your favorite brands.',
+        "Find stunning women cocktail and party dresses. Stand out in lace and metallic cocktail dresses and party dresses from all your favorite brands.",
       detailsIsActive: false,
       brand:
-        'Brand name is the perfect pairing of quality and design. This label creates major everyday vibes with its collection of modern brooches, silver and gold jewellery, or clips it back with hair accessories in geo styles.',
-      careInstructions: 'Do not wash!'
+        "Brand name is the perfect pairing of quality and design. This label creates major everyday vibes with its collection of modern brooches, silver and gold jewellery, or clips it back with hair accessories in geo styles.",
+      careInstructions: "Do not wash!",
     };
-  }
+  },
 };
 </script>
 
 <style lang="scss" scoped>
+.pincode {
+  -webkit-text-security: disc;
+  -moz-text-security: disc;
+}
 .pdc-pdp-loader {
   min-height: 200px;
   padding: 100px 0;
@@ -542,8 +622,8 @@ export default {
 #product {
   box-sizing: border-box;
   @include for-desktop {
-    max-width: 1272px;
-    margin: 0 auto;
+    max-width: 1472px;
+    // margin: 0 auto;
   }
 }
 .product {
@@ -731,5 +811,94 @@ export default {
   100% {
     transform: translate3d(0, 0, 0);
   }
+}
+.space {
+  width: 100%;
+  background: #f3f4f9;
+  padding: 65px 0 68px;
+  margin-bottom: 59px;
+  margin-top: 50px;
+}
+h5 {
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  color: #000;
+  margin-bottom: 15px;
+  display: block;
+  font-size: 16px;
+  font-family: Jost, sans-serif;
+}
+span {
+  font-family: Jost, sans-serif;
+  letter-spacing: 0.04em;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  list-style: none;
+  font-weight: 100;
+  color: grey;
+}
+p {
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  color: #000;
+  margin-bottom: 15px;
+  display: block;
+  font-family: Jost, sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+}
+.h5 {
+  font-weight: 700;
+  color: grey;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-family: Jost, sans-serif;
+  letter-spacing: 0.04em;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeSpeed;
+}
+.deliverydialogue {
+  margin: 19px 0 0;
+  line-height: 1.2;
+  color: grey;
+  font-size: 14px;
+}
+.pincodebox {
+  font-family: Jost, sans-serif;
+  letter-spacing: 0.04em;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeSpeed;
+  width: 100%;
+  font-size: 13px;
+  color: grey;
+  height: 48px;
+  padding: 0 85px 0 20px;
+  position: relative;
+  border-color: #000;
+}
+.deliverybox {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  position: absolute;
+  margin-left: -100px;
+  margin-top: 13px;
+  letter-spacing: 0.7px;
+  background: 0 0;
+  border: none;
+  display: inline-block;
+  -webkit-appearance: none;
+}
+.deliveryoption {
+  font-size: 18px;
+  text-transform: inherit;
+  color: grey;
+  letter-spacing: 0.3px;
+  margin-bottom: 20 px;
 }
 </style>
