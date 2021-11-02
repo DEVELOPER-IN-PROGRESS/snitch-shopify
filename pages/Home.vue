@@ -39,10 +39,7 @@
     <Productgrid 
       :products="products" 
         :loading="productsLoading"
-        title="Match with it"
     />
-   
-     
 
     <CardContainer :categoriesList="categoriesList"></CardContainer>
     <LazyHydrate when-visible>

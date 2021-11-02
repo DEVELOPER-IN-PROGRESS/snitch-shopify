@@ -1,8 +1,8 @@
 <template>
    <div  class="card-container">
        <div class="prImage" href="#"  :style="{ backgroundImage: `url(${imgUrl})` }" alt="..." />
-       <p>{{ title }}</p>
-       <p>{{ price }}</p>
+       <p  class="card__title">{{ title }}</p>
+       <p class="card__price">Rs {{ price }}</p>
    </div>
 </template>
 
@@ -82,12 +82,34 @@ export default {
       background-repeat:no-repeat ;
   }
 
+ .card__title{
+   font-size: 12px;
+   height:30px;
+ }
+
+.card__price{
+  font-size: 12px;
+}
+
 
   @media screen and (min-width:768px) {
       .prImage{
       width:100%;
-      height:500px; 
+      height:530px; 
   }
+   .card__title{
+   font-size: 12px;
+   margin: 5px;
+   padding: 0px;
+ }
+
+ .card__price{
+  font-size: 12px;
+  margin:0px;
+  padding: 0px;
+}
+
+
   }
 
    @media screen and (min-width:992px) {
@@ -95,6 +117,19 @@ export default {
       width:100%;
       height:420px; 
   }
+
+  .card__title{
+   font-size: 16px;
+   margin: 5px;
+   padding: 0px;
+ }
+
+ .card__price{
+  font-size: 16px;
+  margin:0px;
+  padding: 0px;
+}
+
   }
 
  
