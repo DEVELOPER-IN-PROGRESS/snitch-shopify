@@ -36,20 +36,12 @@
       />
     </LazyHydrate>
 
-    <Productgrid></Productgrid>
-    
-    <div class="gridContainer">
-      <div class="product-grid">
-        <PrCard/>
-        <PrCard/>
-        <PrCard/>
-        <PrCard/>
-        <PrCard/>
-        <PrCard/>
-        <PrCard/>
-        <PrCard/>
-    </div>
-  </div>
+    <Productgrid 
+      :products="products" 
+        :loading="productsLoading"
+        title="Match with it"
+    />
+   
      
 
     <CardContainer :categoriesList="categoriesList"></CardContainer>
@@ -85,7 +77,6 @@ import RelatedProducts from "~/components/RelatedProducts.vue";
 import RelatedProducts1 from "~/components/RelatedProducts1.vue";
 import MostLoved from '~/components/MostLoved.vue';
 import Productgrid from '~/components/Productgrid.vue';
-import PrCard from  '~/components/ProductCard.vue';
  import { useProduct, useCart, productGetters } from "@vue-storefront/shopify";
 import { computed } from "@vue/composition-api";
 import { onSSR } from "@vue-storefront/core";
@@ -147,7 +138,7 @@ export default {
     CardContainer,
     MostLoved,
     Banner,
-    PrCard , 
+    Productgrid , 
     CarouselBanner,
     LowerBanner,
   },
@@ -353,27 +344,7 @@ export default {
   }
 }
 
-.gridContainer{
-  display:grid;
-  place-items: center;
-  margin:0 auto; 
-}
-.product-grid{ 
-        display: grid;
-        grid-template-columns: 1fr 1fr ;
-        column-gap: 14px;
-        row-gap: 5px;
-    }
 
-@media screen and(min-width:992px) {
-  .product-grid{ 
-        display: grid;
-        padding:0 26px;
-        grid-template-columns: 1fr 1fr 1fr  1fr;
-        column-gap: 20px;
-        row-gap: 25px;
-    }
-}
 
 .similar-products {
   display: flex;

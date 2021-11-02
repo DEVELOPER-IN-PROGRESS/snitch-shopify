@@ -1,67 +1,103 @@
  <template lang="">
-  <div class="grid-container">
-    <SfProductCard
-      data-cy="category-product-card"
-      v-for="(product, i) in products"
-      :key="productGetters.getId(product)"
-      :style="{ '--index': i }"
-      :title="productGetters.getName(product)"
-      :image="productGetters.getCoverImage(product)"
-      :regular-price="$n(productGetters.getPrice(product).regular, 'currency')"
-      :special-price="
-        productGetters.getPrice(product).special &&
-          $n(productGetters.getPrice(product).special, 'currency')
-      "
-      :link="
-        localePath(
-          `/p/${productGetters.getId(product)}/${productGetters.getSlug(
-            product
-          )}`
-        )
-      "
-      class="products__product-card item"
-      @click:wishlist="addItemToWishlist({ product })"
-      @click:add-to-cart="HandleAddTocart({ product, quantity: 1 })"
-    />
+     
+    <div class="gridWrapper"
+      <div class="grid-container"
+      <div class="product-grid">
+        <PrCard v-for="(list, i) in productArray"
+          :key="i"
+         :title="list.name"
+        :imgUrl="list.images[0].src"
+        :price="list.price.original"
+          />
+        </div>
+    </div>
   </div>
+
+
 </template>
 <script>
-import {
-  productGetters,
-  useFacet,
-  facetGetters,
-} from "@vue-storefront/shopify";
-import { SfProductCard } from "@storefront-ui/vue";
-import { computed, onMounted } from "@vue/composition-api";
-import { onSSR } from "@vue-storefront/core";
+// import {
+//   productGetters,
+//   useFacet,
+//   facetGetters,
+// } from "@vue-storefront/shopify";
+// import { SfProductCard } from "@storefront-ui/vue";
+// import { computed, onMounted } from "@vue/composition-api";
+// import { onSSR } from "@vue-storefront/core";
+import PrCard from  '~/components/ProductCard.vue';
+
 export default {
-  components: {
-    SfProductCard,
+   
+  props: {
+    title: String,
+    products: Array,
+    loading: Boolean
   },
-  setup() {
-    const { result, search, loading } = useFacet();
-    const products = computed(() => facetGetters.getProducts(result.value));
 
-    onSSR(async () => {
-      await search({
-        categorySlug: "shirts",
-        itemsPerPage: 8,
-      });
-    });
+  name : 'Productgrid' ,
 
-    onMounted(()=>{ console.log(products)})
-
-    return {
-      products,
-      loading,
-      productGetters,
-    };
+  components:{
+    PrCard ,
   },
+  // setup() {
+  //   const { result, search, loading } = useFacet();
+  //   const products = computed(() => facetGetters.getProducts(result.value));
+
+  //   onSSR(async () => {
+  //     await search({
+  //       categorySlug: "shirts",
+  //       itemsPerPage: 8,
+  //     });
+  //   });
+
+  //    onMounted(()=>{ console.log("products grid", this.products)})
+
+  //   return {
+  //     products,
+  //     loading,
+  //     productGetters,
+  //   };
+  // },
+  computed: {
+     productArray(){
+       return this.products ;
+     }
+  } ,
+
+    mounted(){
+   console.log('grid' ,this.products);
+    console.log( );
+  },
+
+
 };
 </script>
 
 <style scoped>
-@media screen and (min-width: 300px) {
+.gridWrapper{
+  display:grid;
+  place-items: center;
+  margin:0 auto; 
+}
+.product-grid{ 
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        column-gap: 14px;
+        row-gap: 5px;
+    }
+
+@media screen and(min-width:992px) {
+  .product-grid{ 
+        display: grid;
+        padding:0 26px;
+        grid-template-columns:1fr 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 25px;
+    }
+}
+
+
+/* @media screen and (min-width: 300px) {
     .grid-container{
         display: grid;
         margin:  auto ;
@@ -69,7 +105,7 @@ export default {
         border: 1px dashed black;
         row-gap: 20px;
     }
-}
+} */
 
 @media screen and (min-width: 768px) {
     .grid-container{
