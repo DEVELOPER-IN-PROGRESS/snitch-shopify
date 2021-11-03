@@ -27,6 +27,10 @@
       />
     </LazyHydrate>
 
+   <Productgrid 
+      :products="products" 
+        :loading="productsLoading"
+    />
 
     <LazyHydrate when-visible>
       <RelatedProducts1
@@ -36,10 +40,12 @@
       />
     </LazyHydrate>
 
-    <Productgrid 
-      :products="products" 
+    <Productflex
+         :products="products" 
         :loading="productsLoading"
     />
+
+   
 
     <CardContainer :categoriesList="categoriesList"></CardContainer>
     <LazyHydrate when-visible>
@@ -74,7 +80,8 @@ import RelatedProducts from "~/components/RelatedProducts.vue";
 import RelatedProducts1 from "~/components/RelatedProducts1.vue";
 import MostLoved from '~/components/MostLoved.vue';
 import Productgrid from '~/components/Productgrid.vue';
- import { useProduct, useCart, productGetters } from "@vue-storefront/shopify";
+import Productflex from '~/components/Productflex.vue';
+import { useProduct, useCart, productGetters } from "@vue-storefront/shopify";
 import { computed } from "@vue/composition-api";
 import { onSSR } from "@vue-storefront/core";
 import MobileStoreBanner from "~/components/MobileStoreBanner.vue";
@@ -136,6 +143,7 @@ export default {
     MostLoved,
     Banner,
     Productgrid , 
+    Productflex,
     CarouselBanner,
     LowerBanner,
   },
